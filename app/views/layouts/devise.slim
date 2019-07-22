@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title
+      | Sign in / Sign up
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    .container
+      - if notice
+        p.alert.alert-success= notice
+      - if alert
+        p.alert.alert-danger= alert
+      .row.justify-content-center
+        .col-sm-6
+          = yield
