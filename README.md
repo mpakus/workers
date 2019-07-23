@@ -1,5 +1,7 @@
 # Workers & Customers
 
+[![CircleCI](https://circleci.com/gh/mpakus/workers.svg?style=svg)](https://circleci.com/gh/mpakus/workers)
+
 You're working on a rails web app which matches workers to customers.
 
 A worker is a registered user, who has one or more skills like “cooking”, “house cleaning”, “fixing wireless networks”, and so on.
@@ -40,7 +42,7 @@ example:
 - [x] Workers and Skills relation
 - [x] Workers + Skills, Customers seed
 - [x] Search HTML & RJS service class and UI
-- [ ] CI (Circle or Codeship)
+- [x] CI (Circle or Codeship)
 - [ ] Heroku deploy
 - [ ] Smoke tests
 
