@@ -15,6 +15,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'slim-rails'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
+gem 'faker'
 
 # gem 'mini_racer', platforms: :ruby
 # gem 'bcrypt', '~> 3.1.7'
@@ -40,7 +41,6 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # gem 'rails-controller-testing'
   gem 'factory_bot_rails'
-  gem 'faker'
   gem 'rspec-rails'
   gem 'rspec_junit_formatter'
   gem 'shoulda-matchers'
