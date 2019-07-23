@@ -13,7 +13,7 @@ gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 gem 'devise-i18n'
 gem 'devise-bootstrap-views', '~> 1.0'
-gem 'bootstrap', '~> 4.2.1'
+gem 'bootstrap', '~> 4.3.1'
 gem 'slim-rails'
 
 # gem 'mini_racer', platforms: :ruby
