@@ -29,7 +29,8 @@ Password1
 ```
 
 example:
-- login: customer100@mail.com
+- https://workers-customers.herokuapp.com
+- login: customer111@mail.com
 - password: Password1
 
 ## To Do
@@ -43,8 +44,8 @@ example:
 - [x] Workers + Skills, Customers seed
 - [x] Search HTML & RJS service class and UI
 - [x] CI (Circle or Codeship)
-- [ ] Heroku deploy
-- [ ] Smoke tests
+- [x] Heroku deploy - https://workers-customers.herokuapp.com
+- [x] Smoke tests
 
 ## Screenshots
 
