@@ -1,3 +1,5 @@
+require 'csv'
+
 #
 # --- CUSTOMERS ---
 #
@@ -11,3 +13,10 @@ customers = []
   }
 end
 Customer.import(customers, validate: false)
+
+#
+# --- SKILLS
+#
+Skill.destroy_all
+skills = CSV.read(Rails.root.join('db', 'skills.csv'))
+Skill.import(skills.collect{ |row| {name: row[0]} }, validate: false)

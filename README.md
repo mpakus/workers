@@ -12,13 +12,31 @@ The challenge: create a prototype of this website, with the main focus on the ba
 
 This is expected to take about 5-10 hours, but we don't run a timer :) Feel free to use your finished code as open source code in your portfolio.
 
+## Setup
+```
+bundle install
+rake db:create
+rake db:migrate
+rake db:seed
+```
+
+## Log in
+```
+customer0...9999@mail.com
+Password1
+```
+
+example:
+- login: customer100@mail.com
+- password: Password1
+
 ## To Do
 
 - [x] Initial rep
 - [x] Rails + Rubocop + Rspec
 - [x] Devise register / login
-- [ ] Worker - Customer models
-- [ ] Skills model and table seed
+- [x] Worker - Customer models
+- [x] Skills model and table seed
 - [ ] Workers and Skills relation
 - [ ] Workers + Skills, Customers seed
 - [ ] Search HTML & RJS service class and UI
