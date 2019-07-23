@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
-class Customer < User
+FactoryBot.define do
+  factory :worker do
+    name { Faker::Name.name }
+    sequence(:email) { |n| "worker#{n}@mail.com" }
+  end
 end
 
 # == Schema Information

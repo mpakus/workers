@@ -1,0 +1,15 @@
+- if workers.any?
+  table.table.table-striped.table-hover
+    thead.thead-dark
+      tr
+        th #
+        th Name
+        th E-mail
+    - workers.each_with_index do |worker, i|
+      tr
+        td= i + 1
+        td= worker.name
+        td=< mail_to worker.email
+- else
+  p.alert.alert-secondary
+    | Please select the skills of the workers.

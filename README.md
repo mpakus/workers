@@ -39,7 +39,15 @@ example:
 - [x] Skills model and table seed
 - [x] Workers and Skills relation
 - [x] Workers + Skills, Customers seed
-- [ ] Search HTML & RJS service class and UI
+- [x] Search HTML & RJS service class and UI
 - [ ] CI (Circle or Codeship)
 - [ ] Heroku deploy
 - [ ] Smoke tests
+
+## Screenshots
+
+![Alt text](https://monosnap.com/image/O6zkhdw6WEKxmXUpm52vgc2QsjWBus)
+
+App works without JavaScript too.
+
+![Alt text](https://monosnap.com/image/hkda1TeuuFQPHGZqWhD2QHaCAaZOEe)

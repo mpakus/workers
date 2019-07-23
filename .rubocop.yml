@@ -72,3 +72,6 @@ Layout/AlignHash:
 
 Rails/HasAndBelongsToMany:
   Enabled: false
+
+RSpec/LetSetup:
+  Enabled: false

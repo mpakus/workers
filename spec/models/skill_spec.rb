@@ -10,6 +10,15 @@ RSpec.describe Skill, type: :model do
   end
 
   context 'with relations' do
-    it { is_expected.to have_and_belong_to_many(:workers) }
+    it { is_expected.to have_many(:abilities) }
+    it { is_expected.to have_many(:workers) }
+  end
+
+  context 'with scopes' do
+    let!(:skill_a) { FactoryBot.create(:skill, name: 'A-skill') }
+    let!(:skill_c) { FactoryBot.create(:skill, name: 'C-skill') }
+    let!(:skill_b) { FactoryBot.create(:skill, name: 'B-skill') }
+
+    it { expect(described_class.ordered.to_a).to match_array([skill_a, skill_b, skill_c]) }
   end
 end

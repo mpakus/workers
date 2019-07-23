@@ -1,0 +1,13 @@
+= form_tag workers_path, method: 'GET', remote: true
+  .card
+    .card-header.bg-primary
+      h2.title Skills
+    .card-body
+      .skills.list_group.list-group-flush
+        - Skill.ordered.find_each do |skill|
+          - checked = current_skills.include?(skill.id)
+          label.list-group-item class=(checked ? 'active' : nil)
+            = check_box_tag 'skills[]', skill.id, checked
+            = skill.name
+    .card-footer.secondary.text-right
+      = submit_tag 'Search', class: 'btn btn-primary'
