@@ -69,3 +69,6 @@ Rails/SkipsModelValidations:
 
 Layout/AlignHash:
   Enabled: false
+
+Rails/HasAndBelongsToMany:
+  Enabled: false

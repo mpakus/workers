@@ -37,7 +37,7 @@ example:
 - [x] Devise register / login
 - [x] Worker - Customer models
 - [x] Skills model and table seed
-- [ ] Workers and Skills relation
+- [x] Workers and Skills relation
 - [ ] Workers + Skills, Customers seed
 - [ ] Search HTML & RJS service class and UI
 - [ ] CI (Circle or Codeship)
